@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Booking {
@@ -27,5 +28,12 @@ public class Booking {
 
     public void addBedroomBooked(Bedroom bedroom) {
         this.bedroomsBooked.add(bedroom);
+    }
+
+    public double totalPrice() {
+        double total = 0;
+        for (double i = 0; i < this.bedroomsBooked.size(); i++) {
+            i.get
+        }
     }
 }
