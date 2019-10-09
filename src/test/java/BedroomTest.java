@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class BedroomTest {
@@ -41,6 +43,19 @@ public class BedroomTest {
         bedroom.addGuest(guest1);
         bedroom.addGuest(guest1);
         assertEquals(2, bedroom.guestsCount());
+    }
+
+    @Test
+    public void canGetGuests(){
+        bedroom.addGuest(guest1);
+        assertEquals(1, bedroom.guestsCount());
+    }
+
+    @Test
+    public void canRemoveAllGuests(){
+        bedroom.addGuest(guest1);
+        bedroom.removeAllGuests();
+        assertEquals(0, bedroom.guestsCount());
     }
 
 }

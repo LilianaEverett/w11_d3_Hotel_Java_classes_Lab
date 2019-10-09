@@ -35,4 +35,13 @@ public class Bedroom {
     public int guestsCount() {
         return this.guests.size();
     }
+
+
+    public ArrayList<Guest> getGuests() {
+        return this.guests;
+    }
+
+    public void removeAllGuests() {
+        this.guests.clear();
+    }
 }
